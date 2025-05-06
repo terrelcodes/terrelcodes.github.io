@@ -4,7 +4,6 @@ import solidPlugin from 'vite-plugin-solid';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    base: "/dofftime/",
     define: {
       __APP_ENV__: JSON.stringify(env),
     },

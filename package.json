@@ -6,7 +6,7 @@
   "homepage": "https://terrelcodes.github.io/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:terrelcodes/dofftime.git"
+    "url": "git@github.com:terrelcodes/terrelcodes.github.io.git"
   },
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
     "serve": "vite preview",
     "sss": "cd ./dist && python -m http.server 8000",
     "predeploy": "vite build",
-    "deploy": "gh-pages -d dist -r git@github.com:terrelcodes/dofftime.git"
+    "deploy": "gh-pages -d dist -r git@github.com:terrelcodes/terrelcodes.github.io.git"
   },
   "license": "MIT",
   "devDependencies": {

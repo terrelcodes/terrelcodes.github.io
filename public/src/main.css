@@ -1,0 +1,95 @@
+:root {
+    --background-color: hsl(0, 0%, 85%);
+    --color: hsl(0, 3%, 10%);
+    --link-color: hsl(243, 75%, 50%);
+    --link-hover-color: hsl(243, 58%, 50%);
+    --link-visit-color: hsl(266, 58%, 50%);
+    --footer-color: hsl(0, 0%, 25%);
+    --footer-background-color: hsl(0, 0%, 75%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: hsl(215, 28%, 10%);
+        --color: hsl(0, 0%, 90%);
+        --link-color: hsl(243, 94%, 82%);
+        --link-hover-color: hsl(243, 96%, 82%);
+        --link-visit-color: hsl(266, 100%, 82%);
+        --footer-background-color: hsl(0, 0%, 15%);
+        --footer-color: hsl(0, 0%, 70%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    border: solid 1px hsl(313, 100%, 50%);
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--link-visit-color);
+}
+
+main {
+    max-width: 64rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    flex-grow: 1
+}
+
+header {
+    margin: 0 0 1rem 0;
+    font-size: 0.875rem;
+    color: var(--footer-color);
+    background-color: var(--footer-background-color);
+    padding: .25rem;
+    flex-grow: 0;
+}
+@media (orientation:landscape) {
+    main {
+        flex-direction: row;
+    }
+}
+
+
+ /*   
+    border-color: hsl(240, 84%, 67%);
+    box-shadow: 0 0 0 3px hsla(240, 84%, 67%, 0.3);*/
+
+.panel {
+    padding: .5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
