@@ -1,0 +1,74 @@
+/* Reset some basic elements */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --dark-mode-link-color: cyan;
+    --measure: 64ch;
+    --measure-sm: 40ch;
+    --measure-xs: 20ch;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16pt;
+}
+
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    max-inline-size: var(--measure);
+}
+
+.center {
+    box-sizing: content-box;
+    margin-inline: auto;
+    max-inline-size: var(--measure);
+}
+
+/* Basic link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--light-color);
+        background-color: var(--dark-color);
+    }
+    a{
+        color: var(--dark-mode-link-color);
+    }
+}
